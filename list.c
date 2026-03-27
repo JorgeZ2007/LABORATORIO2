@@ -50,6 +50,7 @@ List * createList() {
 
 void * firstList(List * list) {
     if(list->head == NULL) return NULL;
+    
     Node *primero = list->head; 
     list->current = primero;
     void *dato = primero->data;
@@ -57,7 +58,11 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    return NULL;
+    if(list->current->next == NULL) return NULL; 
+
+    list->current = list->current->next; 
+    void *dato = list->current->data; 
+    return dato;
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
