@@ -29,3 +29,14 @@ Fri Mar 27 06:05:16 PM UTC 2026:
  tests:  0|6
 total_score: 0/60
 f1790d3
+Fri Mar 27 06:06:24 PM UTC 2026: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:97:17: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   97 |             list.tail = nuevoNodo;
+      |                 ^
+      |                 ->
+49168ae
