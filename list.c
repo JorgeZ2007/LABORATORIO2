@@ -171,7 +171,7 @@ void * popCurrent(List * list) {
         list->tail = anterior; 
     }
 
-    void *dato = aBorrar->data 
+    void *dato = aBorrar->data;
     free(aBorrar); 
     return dato; 
 }
