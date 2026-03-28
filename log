@@ -178,3 +178,13 @@ Sat Mar 28 12:47:31 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 fd37b05
+Sat Mar 28 01:01:18 AM UTC 2026: 
+ list.c | 27 +++++++++++++++++++++++----
+ 1 file changed, 23 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:175:5: error: expected ‘,’ or ‘;’ before ‘free’
+  175 |     free(aBorrar);
+      |     ^~~~
+155b65d
